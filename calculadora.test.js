@@ -8,4 +8,12 @@ describe("Teste da calculadora", () => {
 		const resultado = calculadora.soma(a, b);
 		expect(resultado).toBe(resultadoExperado);
 	})
+	test("Deve retornar a subtração de 2 números", () => {
+		const calculadora = new Calculadora();
+		const a = 10
+		const b = 5
+		const resultadoExperado = 5
+		const resultado = calculadora.subtrair(a, b);
+		expect(resultado).toBe(resultadoExperado);
+	})
 })
